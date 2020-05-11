@@ -17,6 +17,13 @@
     display: grid;
     justify-content: center;
     color: #fff;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.active {
+    color: #FF3A3A;
+    /* text-decoration: underline #FF3A3A; */
+    transition: 0.1s;
 }
 .content {
     display: grid;
@@ -106,7 +113,7 @@ svg:hover path {
 .projects {
     /* padding-top: 100px; */
     min-height: 100vh;
-    position: relative;
+    /* position: relative; */
     z-index: 2;
 }
 .projects_title {
@@ -119,33 +126,36 @@ svg:hover path {
     font-size: 120px;
     line-height: 120px;
     font-weight: 900;
-    opacity: 0.2;
+    /* opacity: 0.2; */
     margin-right: -7px;
 }
 .projects_content {
     margin-top: 2rem;
+    grid-template-columns: 1fr 1fr;
     display: grid;
-    width: 80%;
-    position: absolute;
-    right: 0;
-    grid-gap: 2rem;
-    /* background: blue; */
-}
-/* .projects span { */
-    /* min-height: 100vh; */
-    /* color: #fff; */
-    /* position: fixed; */
-    /* top: 0; */
+    /* display: flex; */
+    grid-gap: 1rem;
+    /* position: absolute; */
+    /* width: 100%; */
     /* left: 0; */
-/* } */
-.projects .content_right {
-    margin-top: 116px;
-    position: absolute;
-    z-index: 1;
+    /* margin-left: -15%; */
 }
 
-
-
+.au {
+    min-height: 100vh;
+}
+.au_title {
+    color: #fff;
+    display: grid;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 900;
+    /* opacity: 0.2; */
+    margin-right: -7px;
+}
+.contact {
+    min-height: 100vh;
+}
 @keyframes blink {
     0% { background: #FF3A3A }
     50% { background: transparent }

@@ -1,10 +1,12 @@
-<!-- (mouseover)="focused = true" (mouseout)="focused = false" -->
-<div class="card">
-    <div [className]="focused ? 'c_imgF': 'c_img'" class="c_img">
-        <!-- optional class name -->
-        <app-svg [name]="name"></app-svg>  
+<div class="card" (mouseover)="focused = true" (mouseout)="focused = false">
+    <div [className]="focused ? 'c_img Fimg': 'c_img'">
+        <!-- <div class="c_img__content"> -->
+            <!-- hello -->
+        <!-- </div> -->
+        <app-svg [name]="name"></app-svg>
     </div>
-    <div class="c_text">
+    <div [className]="focused ? 'c_text Ftxt': 'c_text'">
         {{text}}
+        <div class="c_text__button">Подробнее</div>
     </div>
-</div> 
+</div>

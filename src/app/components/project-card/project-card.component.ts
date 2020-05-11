@@ -8,7 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProjectCardComponent implements OnInit {
   @Input() name
   @Input() text
-  focused: boolean = false
+  @Input() focused = false
+  // focused: boolean = false
   constructor() { }
 
   ngOnInit(): void {
