@@ -1,0 +1,39 @@
+.app-wrapper {
+    display: grid;
+    justify-items: center;
+    min-height: 100vh;
+    background: #000000;
+    position: relative;
+}
+.app {
+    display: grid;
+    /* grid-gap: 5%; */
+    width: 90%;
+    /* width: 1300px; */
+    position: relative;
+}
+.logo {
+    position: fixed;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    /* margin-left: -1rem; */
+    margin-top: -3px;
+}
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.content {
+    padding-left: 136px;
+}
+@media (min-width: 1400px) {
+    .app {
+        display: grid;
+        /* grid-gap: 5%; */
+        width: 70%;
+        /* width: 1300px; */
+        position: relative;
+    }
+}

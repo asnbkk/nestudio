@@ -1,0 +1,10 @@
+<!-- (mouseover)="focused = true" (mouseout)="focused = false" -->
+<div class="card">
+    <div [className]="focused ? 'c_imgF': 'c_img'" class="c_img">
+        <!-- optional class name -->
+        <app-svg [name]="name"></app-svg>  
+    </div>
+    <div class="c_text">
+        {{text}}
+    </div>
+</div> 

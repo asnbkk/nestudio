@@ -1,0 +1,31 @@
+.card {
+    background: #2c2c2c;
+    padding: 1rem 2rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    grid-gap: 2rem;
+    /* width: 80%;  */
+    /* position: absolute; */
+    right: 0;
+    justify-self: end;
+    z-index: 3;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.card:hover {
+    /* background: #444444; */
+}
+/* .c_img { */
+    /* transition: 0.1s; */
+/* } */
+/* .c_imgF { */
+    /* transform: scale(1.05); */
+    /* transition: 0.2s; */
+/* } */
+.c_text {
+    color: #fff;
+    transition: 0.1s;  
+    display: grid;
+    justify-items: end;
+}
