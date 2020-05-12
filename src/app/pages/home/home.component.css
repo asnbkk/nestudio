@@ -48,9 +48,9 @@
     font-weight: 900;
 }
 .content_right {
-    position: absolute;
-    /* right: 5%; */
-    right: 0;
+    position: fixed;
+    right: 5%;
+    /* right: 0; */
     z-index: 1;
 }
 svg path {
@@ -156,6 +156,12 @@ svg:hover path {
 .contact {
     min-height: 100vh;
 }
+.status {
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: #fff;
+}
 @keyframes blink {
     0% { background: #FF3A3A }
     50% { background: transparent }
@@ -163,7 +169,7 @@ svg:hover path {
 }
 @media (min-width: 1400px) {
     .content_right {
-        /* right: 15%; */
-        right: 0;
+        right: 15%;
+        /* right: 0; */
     }
 }

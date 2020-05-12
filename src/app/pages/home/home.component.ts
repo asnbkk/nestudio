@@ -15,19 +15,23 @@ export class HomeComponent implements OnInit {
   doSomething() {
     this.scrollPosition = window.pageYOffset
     if(!this.isSmall()) {
-      this.ballPositionCounter(0)
+      this.ballPositionCounter(15)
       //position absolute used
     }
     else {
-      this.ballPositionCounter(0)
+      this.ballPositionCounter(5.6)
       //position absolute used
     }
   }
 
   ballPositionCounter(padding) {
-    this.ballPosition = 1.25 * window.pageYOffset + padding * this.innerWidth / 100
+    this.ballPosition = window.pageYOffset + padding * this.innerWidth / 100
     let res = this.innerWidth - (padding * this.innerWidth / 100) - 136
-    if(this.ballPosition + 500 >= res) this.ballPosition = res - 500
+    if(this.ballPosition + 500 >= res) {
+      let position = (padding * this.innerWidth / 100) - window.pageYOffset
+      console.log(position)
+      this.ballPosition = res + position
+    }
   }
     
   public arrayOfStrings = ['дизайн', 'стиль', 'творчество', 'креатив', 'смелость']

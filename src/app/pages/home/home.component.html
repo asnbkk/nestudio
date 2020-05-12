@@ -8,8 +8,8 @@
             <div class="header_item">Контакты</div>
         </div>
     </div>
-    <div class="content" [ngStyle]="{'opacity': 1 - scrollPosition / 500}">
-        <div class="content_left" >
+    <div class="content">
+        <div class="content_left" [ngStyle]="{'opacity': 1 - scrollPosition / 500}">
             <div class="content_left__main">
                 <span>
                     Нестудия - это
@@ -47,10 +47,10 @@
 <!-- [ngStyle]="{'opacity': scrollPosition / 800}" -->
 <div class="projects" >
     <!-- <div class="content_right" [ngStyle]="{'left': ballPosition - 700 + 'px'}"><img src="assets/img/circle.png"></div> -->
-    <!-- <span> -->
-        <!-- {{ballPosition}}<br> -->
-        <!-- {{scrollPosition}} -->
-    <!-- </span> -->
+    <span class="status">
+        {{ballPosition}}<br>
+        {{scrollPosition}}
+    </span>
     <div class="projects_title">
         <span>
             Проекты
