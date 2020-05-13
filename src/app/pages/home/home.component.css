@@ -60,13 +60,14 @@
     /* right: 0; */
     z-index: 1;
 }
-svg path {
-    transition: 0.2s;
-}
-svg:hover path {
-    d: path("M250 250C250 388.071 250 250 250 500C111.929 500 0 388.071 0 250C0 111.929 111.929 0 250 0C250 250 250 111.929 250 250Z");
-    transition: 0.2s;
-}
+/* svg path { */
+    /* transition: 0.2s; */
+/* } */
+/* svg:hover path { */
+    /* d: path("M250 250C250 388.071 250 250 250 500C111.929 500 0 388.071 0 250C0 111.929 111.929 0 250 0C250 250 250 111.929 250 250Z"); */
+    /* transition: 0.2s; */
+/* } */
+
 /* .content_right img { */
     /* width: 500px; */
 /* } */
@@ -118,14 +119,14 @@ svg:hover path {
     min-height: 100vh;
     /* position: relative; */
     /* background: red; */
-    z-index: 2;
+    z-index: 2;   
 }
 .projects_title {
     display: grid;
     justify-items: end;
 }
 .projects_title span {
-    color: #fff;
+    color: #FFF;
     display: grid;
     font-size: 120px;
     line-height: 120px;
@@ -159,6 +160,19 @@ svg:hover path {
 }
 .contact {
     min-height: 100vh;
+}
+.contact_title {
+    display: grid;
+    justify-items: end;
+}
+.contact_title span {
+    color: #FFF;
+    display: grid;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 900;
+    /* opacity: 0.2; */
+    margin-right: -7px;
 }
 .status {
     position: fixed;
