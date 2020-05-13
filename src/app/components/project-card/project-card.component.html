@@ -1,4 +1,4 @@
-<div class="card" (mouseover)="focused = true" (mouseout)="focused = false">
+<div class="card" (click)="focused = !focused">
     <div [className]="focused ? 'c_img Fimg': 'c_img'">
         <!-- <div class="c_img__content"> -->
             <!-- hello -->
