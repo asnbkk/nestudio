@@ -146,6 +146,18 @@
     /* margin-left: -15%; */
 }
 
+.projects_content__seemore {
+    color: #a0a0a0;
+    /* z-index: 2; */
+    z-index: 1;
+    display: grid;
+    justify-content: end;
+    text-align: end;
+    align-items: flex-end;
+    /* grid-template-rows: 1fr auto; */
+    grid-gap: 1rem;
+}
+
 .au {
     min-height: 100vh;
 }
