@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SvgComponent } from './components/svg/svg.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectCardComponent,
-    SvgComponent
+    SvgComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

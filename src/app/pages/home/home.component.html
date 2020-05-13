@@ -30,11 +30,12 @@
                     экономическую
                     сеть.
                 </div>
-                <div class="content_left__button">
+                <!-- <div class="content_left__button">
                     <button>
                         Заказать сайт прямо сейчас
                     </button>
-                </div>
+                </div> -->
+                <app-button [text]="'Заказать сайт прямо сейчас'"></app-button>
             </div>
             <!-- <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}"><img src="assets/img/circle.png"> -->
             <!-- </div> -->
@@ -70,12 +71,7 @@
             </app-project-card>
             <div class="projects_content__seemore">
                 <!-- Кстати, сделанные на базе интернет-аналитики выводы неоднозначны и будут представлены в исключительно положительном свете.  -->
-                <div class="content_left__button">
-                    <button>
-                        <!-- Узнать больше -->
-                        Смотреть больше проектов
-                    </button>
-                </div>
+                <app-button [text]="'Узнать больше'"></app-button>
             </div>
             
         </div>
