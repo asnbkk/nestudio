@@ -58,7 +58,7 @@
     position: fixed;
     right: 5%;
     /* right: 0; */
-    z-index: 1;
+    z-index: 2;
 }
 /* svg path { */
     /* transition: 0.2s; */
@@ -157,6 +157,26 @@
     font-weight: 900;
     /* opacity: 0.2; */
     margin-right: -7px;
+}
+.au_container {
+    position: absolute;
+    left: 0;
+    margin-left: -15%;
+    /* z-index: 1; */
+}
+.au_container__top {
+    display: flex;
+}
+.au_container__middle {
+    display: flex;
+    margin-left: -50vw;
+    position: relative;
+    z-index: 3;
+}
+.au_container__top___item {
+    color: #111;
+    margin-left: 1rem;
+    font-size: 40px;
 }
 .contact {
     min-height: 100vh;

@@ -3,7 +3,7 @@
         <div class="header">
             <div class="header_item__wrapper">
                 <div></div>
-                <div class="header_item" (click)="goHome()">Главная</div>
+                <div class="header_item">Главная</div>
                 <div class="header_item">Проекты</div>
                 <div class="header_item">О нас</div>
                 <div class="header_item">Контакты</div>
@@ -69,6 +69,23 @@
     </div>
     <div class="au">
         <div class="au_title">О нас</div>
+        <div class="au_container">
+            <div class="au_container__top" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/5) + 'px)'}">
+                <div *ngFor="let a of aboutUs">
+                    <div class="au_container__top___item">{{a}}</div>
+                </div>
+            </div>
+            <div class="au_container__middle" [ngStyle]="{'transform': 'translateX(' + (scrollPosition/2) + 'px)'}">
+                <div *ngFor="let a of aboutUs">
+                    <div class="au_container__top___item">{{a}}</div>
+                </div>
+            </div>
+            <div class="au_container__top" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/5) + 'px)'}">
+                <div *ngFor="let a of aboutUs">
+                    <div class="au_container__top___item">{{a}}</div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="contact">
         <div class="contact_title">

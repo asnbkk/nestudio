@@ -17,7 +17,8 @@ export class HomeComponent implements OnInit {
     // console.log(this.scrollPosition)
   // } 
 
-
+  aboutUs = ['HTML', 'App', 'Interface', 'CSS', 'Angular', 'SCSS', 'NodeJS', 'HTML', 'App', 'Interface', 'CSS', 'Angular', 'SCSS', 'NodeJS']
+  
   @HostListener('window:scroll', ['$event'])
   doSomething() {
     let target = document.getElementById('projects')
@@ -99,9 +100,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.type()
     this.innerWidth = window.innerWidth;
-  }
-
-  goHome() {
-
   }
 }
