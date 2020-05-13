@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SvgComponent } from './components/svg/svg.component';
 import { ButtonComponent } from './components/button/button.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ButtonComponent } from './components/button/button.component';
     HomeComponent,
     ProjectCardComponent,
     SvgComponent,
-    ButtonComponent
+    ButtonComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
