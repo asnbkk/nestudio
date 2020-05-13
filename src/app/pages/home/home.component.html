@@ -1,9 +1,9 @@
-<div class="scroll" (scroll)="onScroll()"></div>
+<!-- <div class="scroll" > -->
     <div class="home">
         <div class="header">
             <div class="header_item__wrapper">
                 <div></div>
-                <div class="header_item">Главная</div>
+                <div class="header_item" (click)="goHome()">Главная</div>
                 <div class="header_item">Проекты</div>
                 <div class="header_item">О нас</div>
                 <div class="header_item">Контакты</div>
@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-    <div #target class="projects">
+    <div id="projects" class="projects">
         <!-- <span class="status"> -->
         <!-- {{ballPosition}}<br> -->
         <!-- {{scrollPosition}} -->
@@ -77,3 +77,4 @@
             </span>
         </div>
     </div>
+<!-- </div> -->
