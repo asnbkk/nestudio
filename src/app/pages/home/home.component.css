@@ -114,6 +114,7 @@ svg:hover path {
     /* padding-top: 100px; */
     min-height: 100vh;
     /* position: relative; */
+    /* background: red; */
     z-index: 2;
 }
 .projects_title {

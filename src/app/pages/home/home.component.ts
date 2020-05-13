@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,25 +10,32 @@ export class HomeComponent implements OnInit {
   innerWidth
   ballPosition
   scrollPosition
-  @HostListener('window:scroll', ['$event']) 
-  doSomething() {
-    this.scrollPosition = window.pageYOffset
-    if(!this.isSmall()) {
-      this.ballPositionCounter(15)
-      //position absolute used
+  
+  @HostListener('document:wheel', ['$event.target']) onScroll() {
+    // let projects = document.querySelector('.projects')
+    // projects.scrollIntoView({behavior: "smooth", block: "start"});
     }
-    else {
-      this.ballPositionCounter(5.6)
-      //position absolute used
-    }
-  }
 
+    @HostListener('window:scroll', ['$event']) 
+    doSomething() {
+      this.scrollPosition = window.pageYOffset
+      if(!this.isSmall()) {
+        this.ballPositionCounter(15)
+        //position absolute used
+      }
+      else {
+        this.ballPositionCounter(5)
+        //position absolute used
+      }
+    }
+  // scrollToElement($element): void {
+    // console.log($element);
+  // }
   ballPositionCounter(padding) {
     this.ballPosition = window.pageYOffset + padding * this.innerWidth / 100
     let res = this.innerWidth - (padding * this.innerWidth / 100) - 136
     if(this.ballPosition + 500 >= res) {
       let position = (padding * this.innerWidth / 100) - window.pageYOffset
-      console.log(position)
       this.ballPosition = res + position
     }
   }
