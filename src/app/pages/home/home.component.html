@@ -71,17 +71,17 @@
         <div class="au_title">О нас</div>
         <div class="au_container">
             <div class="au_container__top" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/5) + 'px)'}">
-                <div *ngFor="let a of aboutUs">
+                <div *ngFor="let a of aboutUsShuffle">
                     <div class="au_container__top___item">{{a}}</div>
                 </div>
             </div>
-            <div class="au_container__middle" [ngStyle]="{'transform': 'translateX(' + (scrollPosition/2) + 'px)'}">
-                <div *ngFor="let a of aboutUs">
+            <div class="au_container__middle" [ngStyle]="{'transform': 'translateX(' + (scrollPosition/3) + 'px)'}">
+                <div *ngFor="let a of aboutUsShuffle">
                     <div class="au_container__top___item">{{a}}</div>
                 </div>
             </div>
-            <div class="au_container__top" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/5) + 'px)'}">
-                <div *ngFor="let a of aboutUs">
+            <div class="au_container__bottom" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/20) + 'px)'}">
+                <div *ngFor="let a of aboutUsShuffle">
                     <div class="au_container__top___item">{{a}}</div>
                 </div>
             </div>

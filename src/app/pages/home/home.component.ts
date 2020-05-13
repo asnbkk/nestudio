@@ -10,15 +10,24 @@ export class HomeComponent implements OnInit {
   ballPosition
   scrollPosition
 
-  // @ViewChild('target') target: ElementRef;
-  // @HostListener(':wheel', ['$event']) onScroll() {
-    // let projects = document.querySelector('.projects')
-    // projects.scrollIntoView({ behavior: "smooth"});
-    // console.log(this.scrollPosition)
-  // } 
+  aboutUsShuffle = [
+    'HTML', 'App', 'Interface', 'CSS', 'Angular', 'SCSS', 'NodeJS', 
+    'JavaScript', 'Responsive design', 'Semantic markup', 'SaaS', 'API', 
+    'Bootstrap', 'Backend', 'Cache', 'Data structures', 'Documentation', 'Frameworks',
+    'Frontend', 'HTTP', 'Plugin', 'Python', 'Software stack', 'UI Design', 'UX Design',
+    'Web app', 'Mobile app'
+                  ]  
+  shuffleArray = function(array) {
+  var m = array.length, t, i;
+  while (m) {
+    i = Math.floor(Math.random() * m--);
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+  this.aboutUsShuffle = array
+}
 
-  aboutUs = ['HTML', 'App', 'Interface', 'CSS', 'Angular', 'SCSS', 'NodeJS', 'HTML', 'App', 'Interface', 'CSS', 'Angular', 'SCSS', 'NodeJS']
-  
   @HostListener('window:scroll', ['$event'])
   doSomething() {
     let target = document.getElementById('projects')
@@ -99,6 +108,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.type()
+    this.shuffleArray(this.aboutUsShuffle)
     this.innerWidth = window.innerWidth;
   }
 }
