@@ -26,7 +26,7 @@
     color: #fff;
 }
 .content {
-    padding-left: 136px;
+    /* padding-left: 136px;     */
 }
 @media (min-width: 1400px) {
     .app {

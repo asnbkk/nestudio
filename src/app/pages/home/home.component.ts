@@ -29,17 +29,19 @@ export class HomeComponent implements OnInit {
       //position absolute used
     }
     else {
-      this.ballPositionCounter(5.6)
+      this.ballPositionCounter(5)
       //position absolute used
     }
   }
+
+    val
   ballPositionCounter(padding) {
     this.ballPosition = window.pageYOffset + padding * this.innerWidth / 100
     let res = this.innerWidth - (padding * this.innerWidth / 100) - 136
+    if(this.ballPosition + 500 <= res)
+      this.val = window.pageYOffset
     if (this.ballPosition + 500 >= res) {
-      //need to fix bounce
-      let position = (padding * this.innerWidth / 100) - window.pageYOffset
-      this.ballPosition = res + position
+      this.ballPosition = res - 500 - (window.pageYOffset - this.val)
     }
   }
 
