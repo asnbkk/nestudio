@@ -4,7 +4,9 @@
     display: grid;
     align-items: flex-end;
     justify-content: end;
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .footer_logo {
     color: #fff;

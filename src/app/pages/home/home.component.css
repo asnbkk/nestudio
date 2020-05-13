@@ -1,5 +1,5 @@
 .home {
-    min-height: 100vh;
+    min-height: 120vh;
 }
 .header {
     display: grid;
@@ -116,7 +116,7 @@
 }
 .projects {
     /* padding-top: 100px; */
-    min-height: 100vh;
+    min-height: 120vh;
     /* position: relative; */
     /* background: red; */
     z-index: 2;   
@@ -159,7 +159,7 @@
 }
 
 .au {
-    min-height: 100vh;
+    min-height: 120vh;
 }
 .au_title {
     color: #fff;
