@@ -35,7 +35,9 @@
                         Заказать сайт прямо сейчас
                     </button>
                 </div> -->
-                <app-button [text]="'Заказать сайт прямо сейчас'"></app-button>
+                <app-button 
+                [text]="'Заказать сайт прямо сейчас'">
+                </app-button>
             </div>
             <!-- <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}"><img src="assets/img/circle.png"> -->
             <!-- </div> -->
@@ -71,7 +73,10 @@
             </app-project-card>
             <div class="projects_content__seemore">
                 <!-- Кстати, сделанные на базе интернет-аналитики выводы неоднозначны и будут представлены в исключительно положительном свете.  -->
-                <app-button [text]="'Узнать больше'"></app-button>
+                <app-button 
+                [disabled]="true"
+                [text]="'Узнать больше'">
+                </app-button>
             </div>
             
         </div>

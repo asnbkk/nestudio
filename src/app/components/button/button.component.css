@@ -13,6 +13,18 @@
     align-items: center;
     font-size: 13.3px;
 }
+.disabled {
+    height: 40px;
+    padding: 0 3rem;
+    background: #FF3A3A;
+    color: #fff;
+    opacity: 0.2;
+    cursor: default;
+    transition: 0.1s;    
+    display: grid;
+    align-items: center;
+    font-size: 13.3px;
+}
 .button:hover {
     background: rgba(255, 58, 58, 0.746);
     transition: 0.2s;
