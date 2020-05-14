@@ -160,6 +160,7 @@
 
 .au {
     min-height: 120vh;
+    position: relative;
 }
 .au_title {
     color: #fff;
@@ -167,6 +168,7 @@
     font-size: 120px;
     line-height: 120px;
     font-weight: 900;
+    padding-bottom: 1rem;
     /* opacity: 0.2; */
     margin-right: -7px;
 }
@@ -203,6 +205,13 @@
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
+}
+.au_text {
+    color: #a0a0a0;
+    width: 55%;
+    margin-top: 200px;
+    /* position: absolute; */
+    /* bottom: 60vh; */
 }
 .contact {
     min-height: 100vh;
