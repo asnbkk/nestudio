@@ -118,4 +118,13 @@ export class HomeComponent implements OnInit {
     this.shuffleArray(this.aboutUsShuffle)
     this.innerWidth = window.innerWidth;
   }
+
+  scrollTo(text) {
+    let projects = document.querySelector('.projects')
+    let aboutUs = document.querySelector('.au_title')
+    let contact = document.querySelector('.contact')
+    if(text == 'Проекты') projects.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    if(text == 'О нас') aboutUs.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    if(text == 'Контакты') contact.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+  }
 }
