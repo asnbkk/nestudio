@@ -264,14 +264,79 @@
     }
 }
 @media (max-width: 1280px) {
-    .content_left__main {
+    .content_left__main,
+    .projects_title span,
+    .au_title,
+    .contact_title span {
         font-size: 100px;
         line-height: 100px;
     }
 }
 @media (max-width: 1024px) {
-    .content_left__main {
+    .content_left__main,
+    .projects_title span,
+    .au_title,
+    .contact_title span {
         font-size: 80px;
         line-height: 80px;
+    }
+}
+@media (max-width: 500px) {
+    .content_right {
+        display: none;
+    }
+    .content_left__main,
+    .projects_title span,
+    .au_title,
+    .contact_title span {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .header {
+        opacity: 0;
+    }
+    .content_left__secondary {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .content_left__main {
+        margin: 0;
+    }
+    .cursor {
+        margin-top: 5px;
+        height: 90%;
+    }
+    .type-text {
+        margin-left: 1rem;
+    }
+    .space {
+        display: none;
+    }
+    .home {
+        min-height: 100vh;
+        /* padding: 0 1rem; */
+        width: 100vw;
+    }
+    .toggle {
+        top: 70vh;
+    }
+    .projects_title span {
+        margin: 0;
+        padding: 0 1rem;
+    }
+    .projects {
+        /* padding: 0 1rem; */
+    }
+    .content_left {
+        padding: 0 1rem;
+    }
+    .projects_content {
+        grid-template-columns: 1fr;
+    }
+    .contact_container {
+        grid-template-columns: 1fr;
+    }
+    .au_text {
+        width: 100%;
     }
 }
