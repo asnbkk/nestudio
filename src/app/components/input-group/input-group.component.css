@@ -17,22 +17,27 @@
     color: #fff;
     transition: 0.2s;
 }
+.input_item input::placeholder {
+    color: rgba(255, 255, 255, 0.178);
+}
 .input_item input:focus {
     outline: none;
 }
 .label {
     color: rgba(255, 255, 255, 0.178);
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.8rem;
     font-size: 16px;
     transition: 0.2s;
+    right: 0;
 }
 .focused {
-    font-size: 12px;
-    transition: 0.2s;
     color: rgb(255, 255, 255);
     position: absolute;
-    bottom: 2.2rem;
+    bottom: 0.8rem;
+    font-size: 16px;
+    transition: 0.2s;
+    right: 0;  
 }
 .focused_input input {
     border-bottom: 2px solid rgb(255, 255, 255);

@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-group.component.css']
 })
 export class InputGroupComponent implements OnInit {
-  public focused: boolean = false
+  public name: boolean = false
+  public email: boolean = false
+  public phone: boolean = false
+
   constructor() { }
-  // inputItems = ['Как Вас зовут?', 'Ваша почта', 'Ваш номер телефона']
+  inputItems = ['Как Вас зовут?', 'Ваша почта', 'Ваш номер телефона']
 
   ngOnInit(): void {
   }

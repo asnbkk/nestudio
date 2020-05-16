@@ -1,15 +1,15 @@
 <div class="input-group">
-    <div [className]="focused ? 'input_item focused_input' : 'input_item'">
-        <div [className]="focused ? 'focused' : 'label'">Как Вас зовут?</div>
-        <input (focus)="focused = true" (focusout)="focused = false" type="text">
+    <div [className]="name ? 'input_item focused_input' : 'input_item'">
+        <div [className]="name ? 'focused' : 'label'">Как Вас зовут?</div>
+        <input (focus)="name = true" (focusout)="name = false" type="text">
     </div>
-    <div class="input_item">
-        <div class="label">Ваша почта</div>
-        <input type="text">
+    <div [className]="email ? 'input_item focused_input' : 'input_item'">
+        <div [className]="email ? 'focused' : 'label'">Ваша почта</div>
+        <input (focus)="email = true" (focusout)="email = false" type="text">
     </div>
-    <div class="input_item">
-        <div class="label">Ваш номер телефона</div>
-        <input type="text">
+    <div [className]="phone ? 'input_item focused_input' : 'input_item'">
+        <div [className]="phone ? 'focused' : 'label'">Ваш номер телефона</div>
+        <input (focus)="phone = true" (focusout)="phone = false" type="text">
     </div>
     <app-button
         [text]="'Оставить заявку'">
