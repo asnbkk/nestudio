@@ -56,6 +56,7 @@
 }
 .content_right {
     position: fixed;
+    opacity: 0;
     right: 5%;
     /* right: 0; */
     z-index: 2;
@@ -235,6 +236,15 @@
     top: 0;
     color: #fff;
 }
+.contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+    /* remove z-index */
+}
+
 @keyframes blink {
     0% { background: #FF3A3A }
     50% { background: transparent }

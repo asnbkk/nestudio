@@ -1,0 +1,17 @@
+<div class="input-group">
+    <div [className]="focused ? 'input_item focused_input' : 'input_item'">
+        <div [className]="focused ? 'focused' : 'label'">Как Вас зовут?</div>
+        <input (focus)="focused = true" (focusout)="focused = false" type="text">
+    </div>
+    <div class="input_item">
+        <div class="label">Ваша почта</div>
+        <input type="text">
+    </div>
+    <div class="input_item">
+        <div class="label">Ваш номер телефона</div>
+        <input type="text">
+    </div>
+    <app-button
+        [text]="'Оставить заявку'">
+    </app-button>
+</div>

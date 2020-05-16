@@ -1,0 +1,40 @@
+.input-group {
+    display: grid;
+    grid-gap: 1rem;
+}
+.input_item {
+    display: grid;
+    position: relative;
+}
+.input_item input {
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.178);
+    color: #fff;
+    transition: 0.2s;
+}
+.input_item input:focus {
+    outline: none;
+}
+.label {
+    color: rgba(255, 255, 255, 0.178);
+    position: absolute;
+    bottom: 1rem;
+    font-size: 16px;
+    transition: 0.2s;
+}
+.focused {
+    font-size: 12px;
+    transition: 0.2s;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 2.2rem;
+}
+.focused_input input {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: 0.2s;
+}

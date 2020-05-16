@@ -7,6 +7,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { SvgComponent } from './components/svg/svg.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { InputGroupComponent } from './components/input-group/input-group.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ProjectCardComponent,
     SvgComponent,
     ButtonComponent,
-    FooterComponent
+    FooterComponent,
+    InputGroupComponent
   ],
   imports: [
     BrowserModule,
