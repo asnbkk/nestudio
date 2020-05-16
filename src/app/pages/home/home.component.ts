@@ -45,6 +45,7 @@ export class HomeComponent implements OnInit {
   }
 
     val
+    valLeft
   ballPositionCounter(padding) {
     this.ballPosition = window.pageYOffset + padding * this.innerWidth / 100
     let res = this.innerWidth - (padding * this.innerWidth / 100) - 136
@@ -53,6 +54,12 @@ export class HomeComponent implements OnInit {
     if (this.ballPosition + 500 >= res) {
       this.ballPosition = res - 500 - (window.pageYOffset - this.val)
     }
+    if(this.ballPosition > 0)
+      this.valLeft = window.pageYOffset
+    if(this.ballPosition < 0) {
+      this.ballPosition = (window.pageYOffset - this.valLeft) + this.innerWidth / 100
+    }
+    
   }
 
   public arrayOfStrings = ['дизайн', 'стиль', 'творчество', 'креатив', 'смелость']

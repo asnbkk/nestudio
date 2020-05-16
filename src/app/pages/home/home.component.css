@@ -56,7 +56,6 @@
 }
 .content_right {
     position: fixed;
-    opacity: 0;
     right: 5%;
     /* right: 0; */
     z-index: 2;
@@ -117,7 +116,7 @@
 }
 .projects {
     /* padding-top: 100px; */
-    min-height: 120vh;
+    min-height: 100vh;
     /* position: relative; */
     /* background: red; */
     z-index: 2;   
@@ -213,9 +212,12 @@
     margin-top: 200px;
     /* position: absolute; */
     /* bottom: 60vh; */
+    position: relative;
+    z-index: 10;
 }
 .contact {
-    min-height: 100vh;
+    min-height: 80vh;
+    position: relative;
 }
 .contact_title {
     display: grid;
@@ -240,9 +242,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
+    /* grid-gap: 2rem; */
     position: relative;
     z-index: 10;
     /* remove z-index */
+}
+.contact_container__left {
+    color: #a0a0a0;
+    width: 80%
 }
 
 @keyframes blink {
