@@ -12,11 +12,16 @@
     display: grid;
     align-items: center;
     font-size: 13.3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 .disabled {
     height: 40px;
     padding: 0 3rem;
     background: #FF3A3A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     color: #fff;
     opacity: 0.2;
     cursor: default;
