@@ -72,9 +72,10 @@
     /* width: 500px; */
 /* } */
 .content_left__secondary {
-    color: #5c5c5c;
+    color: #000000;
     width: 55%;
     margin-top: 120px;
+    font-weight: 300;
 }
 .content_left__button button{
     border: 0;
@@ -147,7 +148,9 @@
 }
 
 .projects_content__seemore {
-    color: #a0a0a0;
+    color: #000;
+        font-weight: 300;
+
     /* z-index: 2; */
     z-index: 1;
     display: grid;
@@ -196,7 +199,7 @@
     justify-content: flex-start;
 }
 .au_container__top___item {
-    color: #111;
+    color: rgb(192, 192, 192);
     margin-left: 2rem;
     font-size: 40px;
     display: flex;
@@ -207,7 +210,9 @@
     white-space: nowrap;
 }
 .au_text {
-    color: #a0a0a0;
+    color: #000;
+        font-weight: 300;
+
     width: 55%;
     margin-top: 200px;
     /* position: absolute; */
@@ -248,7 +253,8 @@
     /* remove z-index */
 }
 .contact_container__left {
-    color: #a0a0a0;
+    color: #000;
+    font-weight: 300;
     width: 80%
 }
 
