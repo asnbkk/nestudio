@@ -21,6 +21,7 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    font-size: 18px;
 }
 .active {
     color: #FF3A3A;
@@ -77,6 +78,7 @@
     color: rgb(97, 97, 97);
     width: 55%;
     margin-top: 120px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     /* font-style: italic; */
@@ -204,6 +206,7 @@
 .au_text {
     color: rgb(97, 97, 97);
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 
     width: 55%;
     margin-top: 200px;
@@ -247,8 +250,9 @@
 .contact_container__left {
     color: rgb(97, 97, 97);
     font-weight: 300;
-    width: 80%;
+    width: 90%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 @keyframes blink {

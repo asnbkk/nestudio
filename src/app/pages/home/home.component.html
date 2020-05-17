@@ -1,126 +1,141 @@
-<!-- <div class="scroll" > -->
-    <div class="home">
-        <div class="header">
-            <div class="header_item__wrapper">
-                <div class="space"></div>
-                <div class="header_item">Главная</div>
-                <div class="header_item" (click)="scrollTo('Проекты')">Проекты</div>
-                <div class="header_item" (click)="scrollTo('О нас')">О нас</div>
-                <div class="header_item" (click)="scrollTo('Контакты')">Контакты</div>
+<div class="wrapper">
+    <!-- (wheel)="onMouseWheel($event)" -->
+    <!-- on scroll event -->
+    <!-- <div *ngIf="loader == true">
+        hello
+    </div> -->
+    <div *ngIf="loader == false">
+        <!-- loader condition -->
+        <div class="home">
+            <div class="header">
+                <div class="header_item__wrapper">
+                    <div class="space"></div>
+                    <div class="header_item">Главная</div>
+                    <div class="header_item" (click)="scrollTo('Проекты')">Проекты</div>
+                    <div class="header_item" (click)="scrollTo('О нас')">О нас</div>
+                    <div class="header_item" (click)="scrollTo('Контакты')">Контакты</div>
+                </div>
             </div>
-        </div>
-        <div class="content">
-            <div class="content_left" [ngStyle]="{'opacity': 1 - scrollPosition / 500}">
-                <div class="content_left__main">
-                    <span>
-                        Нестудия - это
-                    </span>
-                    <div class="bottom">
-                        про
-                        <span class="type-text">
-                            {{typedShit}}
+            <div class="content">
+                <div class="content_left">
+                    <!-- [ngStyle]="{'opacity': 1 - scrollPosition / 500}" -->
+                    <div class="content_left__main">
+                        <span>
+                            Нестудия - это
                         </span>
-                        <div [className]="typing ? 'cursor disabled':'cursor'"></div>
+                        <div class="bottom">
+                            про
+                            <span class="type-text">
+                                {{typedShit}}
+                            </span>
+                            <div [className]="typing ? 'cursor disabled':'cursor'"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="content_left__secondary">
-                    Для современного мира граница обучения кадров прекрасно подходит для реализации системы массового
-                    участия.
-                    Сложно сказать, почему представители современных социальных резервов формируют глобальную
-                    экономическую
-                    сеть.
-                </div>
-                <!-- <div class="content_left__button">
+                    <div class="content_left__secondary">
+                        Для современного мира граница обучения кадров прекрасно подходит для реализации системы
+                        массового
+                        участия.
+                        Сложно сказать, почему представители современных социальных резервов формируют глобальную
+                        экономическую
+                        сеть.
+                    </div>
+                    <!-- <div class="content_left__button">
                     <button>
                         Заказать сайт прямо сейчас
                     </button>
                 </div> -->
-                <app-button 
-                [text]="'Заказать сайт прямо сейчас'">
-                </app-button>
-            </div>
-            <!-- <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}"><img src="assets/img/circle.png"> -->
-            <!-- </div> -->
-            <!-- <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}"><svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <app-button [text]="'Заказать сайт прямо сейчас'">
+                    </app-button>
+                </div>
+                <!-- <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}"><img src="assets/img/circle.png"> -->
+                <!-- </div> -->
+                <!-- <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}"><svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M500 250C500 388.071 388.071 500 250 500C111.929 500 0 388.071 0 250C0 111.929 111.929 0 250 0C388.071 0 500 111.929 500 250Z" fill="#222222"/>
             </svg>
             </div> -->
-            <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}">
-                <app-svg [name]="'ball'"></app-svg>
-            </div>
-        </div>
-        <div>
-            <div class="toggle" [ngStyle]="{'opacity': 1 - scrollPosition / 500}"><img src="assets/img/chevron.png">
-            </div>
-        </div>
-    </div>
-    <div id="projects" class="projects">
-        <!-- <span class="status"> -->
-        <!-- {{ballPosition}}<br> -->
-        <!-- {{scrollPosition}} -->
-        <!-- </span> -->
-        <div class="projects_title">
-            <span>
-                Проекты
-            </span>
-        </div>
-        <div class="projects_content">
-            <app-project-card [focused]="true" [name]="'beOnline'"
-                [text]="'Противоположная точка зрения подразумевает, что элементы политического процесса, вне зависимости от их уровня, должны быть объективно рассмотрены соответствующими инстанциями.'">
-            </app-project-card>
-            <app-project-card [name]="'qosymsha'"
-                [text]="'Как уже неоднократно упомянуто, базовые сценарии поведения пользователей являются только методом политического участия и обнародованы.'">
-            </app-project-card>
-            <app-project-card [name]="'mentoriumVk'"
-                [text]="'Как уже неоднократно упомянуто, базовые сценарии поведения пользователей являются только методом политического участия и обнародованы.'">
-            </app-project-card>
-            <div class="projects_content__seemore">
-                <!-- Кстати, сделанные на базе интернет-аналитики выводы неоднозначны и будут представлены в исключительно положительном свете.  -->
-                <app-button 
-                [disabled]="true"
-                [text]="'Узнать больше'">
-                </app-button>
-            </div>
-            
-        </div>
-    </div>
-    <div class="au">
-        <div class="au_title">О нас</div>
-        <div class="au_container">
-            <div class="au_container__top" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/5) + 'px)'}">
-                <div *ngFor="let a of aboutUsShuffle">
-                    <div class="au_container__top___item">{{a}}</div>
+                <div class="content_right" [ngStyle]="{'right': ballPosition + 'px'}">
+                    <app-svg [name]="'ball'"></app-svg>
                 </div>
             </div>
-            <div class="au_container__middle" [ngStyle]="{'transform': 'translateX(' + (scrollPosition/3) + 'px)'}">
-                <div *ngFor="let a of aboutUsShuffle">
-                    <div class="au_container__top___item">{{a}}</div>
-                </div>
-            </div>
-            <div class="au_container__bottom" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/20) + 'px)'}">
-                <div *ngFor="let a of aboutUsShuffle">
-                    <div class="au_container__top___item">{{a}}</div>
+            <div>
+                <div class="toggle" [ngStyle]="{'opacity': 1 - scrollPosition / 500}"><img src="assets/img/chevron.png">
                 </div>
             </div>
         </div>
-        <div class="au_text">
-            Господа, понимание сути ресурсосберегающих технологий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для позиций, занимаемых участниками в отношении поставленных задач. Современные технологии достигли такого уровня
-        </div>
-    </div>
-    <div class="contact">
-        <div class="contact_title">
-            <span>
-                Контакты
-            </span>
-        </div>
-        <div class="contact_container">
-            <div class="contact_container__left">
-                Как принято считать, тщательные исследования конкурентов лишь добавляют фракционных разногласий и объединены в целые кластеры себе подобных. Лишь ключевые особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, ассоциативно распределены по отраслям.
+        <div id="projects" class="projects">
+            <!-- <span class="status"> -->
+            <!-- {{ballPosition}}<br> -->
+            <!-- {{scrollPosition}} -->
+            <!-- </span> -->
+            <div class="projects_title">
+                <span>
+                    Проекты
+                </span>
             </div>
-            <div class="contact_container__right">
-                <app-input-group></app-input-group>
+            <div class="projects_content">
+                <app-project-card [focused]="true" [name]="'beOnline'"
+                    [text]="'Противоположная точка зрения подразумевает, что элементы политического процесса, вне зависимости от их уровня, должны быть объективно рассмотрены соответствующими инстанциями.'">
+                </app-project-card>
+                <app-project-card [name]="'qosymsha'"
+                    [text]="'Как уже неоднократно упомянуто, базовые сценарии поведения пользователей являются только методом политического участия и обнародованы.'">
+                </app-project-card>
+                <app-project-card [name]="'mentoriumVk'"
+                    [text]="'Как уже неоднократно упомянуто, базовые сценарии поведения пользователей являются только методом политического участия и обнародованы.'">
+                </app-project-card>
+                <div class="projects_content__seemore">
+                    <!-- Кстати, сделанные на базе интернет-аналитики выводы неоднозначны и будут представлены в исключительно положительном свете.  -->
+                    <app-button [disabled]="true" [text]="'Узнать больше'">
+                    </app-button>
+                </div>
+
             </div>
         </div>
-        <app-footer></app-footer>
+        <div class="au">
+            <div class="au_title">О нас</div>
+            <div class="au_container">
+                <div class="au_container__top" [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/5) + 'px)'}">
+                    <div *ngFor="let a of aboutUsShuffle">
+                        <div class="au_container__top___item">{{a}}</div>
+                    </div>
+                </div>
+                <div class="au_container__middle" [ngStyle]="{'transform': 'translateX(' + (scrollPosition/3) + 'px)'}">
+                    <div *ngFor="let a of aboutUsShuffle">
+                        <div class="au_container__top___item">{{a}}</div>
+                    </div>
+                </div>
+                <div class="au_container__bottom"
+                    [ngStyle]="{'transform': 'translateX(' + (-scrollPosition/20) + 'px)'}">
+                    <div *ngFor="let a of aboutUsShuffle">
+                        <div class="au_container__top___item">{{a}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="au_text">
+                Господа, понимание сути ресурсосберегающих технологий, а также свежий взгляд на привычные вещи -
+                безусловно
+                открывает новые горизонты для позиций, занимаемых участниками в отношении поставленных задач.
+                Современные
+                технологии достигли такого уровня
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact_title">
+                <span>
+                    Контакты
+                </span>
+            </div>
+            <div class="contact_container">
+                <div class="contact_container__left">
+                    Как принято считать, тщательные исследования конкурентов лишь добавляют фракционных разногласий и
+                    объединены в целые кластеры себе подобных. Лишь ключевые особенности структуры проекта, превозмогая
+                    сложившуюся непростую экономическую ситуацию, ассоциативно распределены по отраслям.
+                </div>
+                <div class="contact_container__right">
+                    <app-input-group></app-input-group>
+                </div>
+            </div>
+            <app-footer></app-footer>
+        </div>
+        <!-- this is for loader condition -->
     </div>
-<!-- </div> -->
+</div>
