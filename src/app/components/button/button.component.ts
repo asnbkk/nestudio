@@ -23,7 +23,7 @@ export class ButtonComponent implements OnInit {
     }, 5000)
     setTimeout(() => {
       this.text = "Спасибо, заявка принята! Ожидайте ответа"
-    }, 1000)
+  }, 1000)
     setTimeout(() => {
       this.text = temptext
     }, 4000)

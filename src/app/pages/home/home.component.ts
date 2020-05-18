@@ -117,6 +117,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.onbeforeunload = function() {window.scrollTo(0,0);}
+    
     this.type()
     this.shuffleArray(this.aboutUsShuffle)
     this.innerWidth = window.innerWidth;
