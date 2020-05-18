@@ -253,6 +253,7 @@
     width: 90%;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
+    margin-top: 40px;
 }
 
 @keyframes blink {
