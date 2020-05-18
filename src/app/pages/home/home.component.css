@@ -1,3 +1,9 @@
+.wrapper {
+    /* overflow: hidden; */
+    /* position: fixed; */
+    /* width: calc(90%); */
+    /* margin-left: -136px; */
+}
 .home {
     min-height: 120vh;
 }
